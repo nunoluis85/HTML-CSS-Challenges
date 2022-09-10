@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  letter-spacing: 3px;
 }
 
 header {
@@ -30,7 +31,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 0px solid #8075ff;
 }
 
 h1,
@@ -57,13 +58,21 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  font-size: larger;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+}
+
+button:hover {
+  background-color: #8075ff;
+}
+
+button:focus {
+  background-color: #3223d6
 }
 
 footer {
@@ -76,6 +85,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -85,8 +95,9 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 150px;
   right: 20px;
+  transition-duration: 0.4s;
 
   display: flex;
   justify-content: center;
@@ -105,11 +116,17 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid yellow;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border: 5px solid red;
+}
+
+.image-container img:last-child {
+  vertical-align: top;
+  border: 5px solid green;
 }
 
 .tigers {
@@ -117,21 +134,25 @@ footer {
   color: #f0e100;
 }
 
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+.black-panther {
+  background-color: rgb(235, 210, 210);
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe {
+  background-color: #483c46;
+  color: #beee62;
+}
+
+.giraffe h2, h3 {
+  color: #f4743b;
 }
 
 .card {
   display: inline-block;
   background-color: white;
   padding: 20px;
-  margin: 10px;
-  width: 30%;
+  margin: 40px;
+  width: 25%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -166,6 +187,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 50px;
 }
 
 .education-container h3,
@@ -178,6 +200,8 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  width: 700px;
+  margin: 80px 400px 80px 500px;
 }
 
 .membership h2 {
@@ -191,5 +215,11 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  margin: 40px;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 10px;
 }
